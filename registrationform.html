@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WHF Volunteer Registration</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #e0f7fa, #80deea);
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .form-container {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 600px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #00796b;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .submit-button {
+      background: #00796b;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-top: 20px;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .submit-button:hover {
+      background: #004d40;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>WHF Volunteer Registration</h2>
+    <form id="volunteer-form">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">-- Select --</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="emergencyName">Emergency Contact Name:</label>
+      <input type="text" id="emergencyName" name="emergencyName">
+
+      <label for="relationship">Relationship:</label>
+      <input type="text" id="relationship" name="relationship">
+
+      <label for="emergencyPhone">Emergency Phone:</label>
+      <input type="tel" id="emergencyPhone" name="emergencyPhone">
+
+      <label for="interests">Interests:</label>
+      <input type="text" id="interests" name="interests">
+
+      <label for="reason">Why do you want to join WHF?</label>
+      <textarea id="reason" name="reason" rows="4"></textarea>
+
+      <input class="submit-button" type="submit" value="Submit">
+    </form>
+  </div>
+
+  <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwUQGamMtV-D2HvHHvtjYFQNSyGcbFgS2i2-RdqmBfLz3LclfaPA2E2XOxRANysvErO/exec';
+  const form = document.getElementById('volunteer-form');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        window.location.href = 'thankyou.html';
+      })
+      .catch(error => {
+        console.error('Error!', error.message);
+        alert('Submission failed. Please try again.');
+      });
+  });
+</script>
+
+</body>
+</html>
