@@ -2,171 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>World Helping Force (WHF)</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Thank You - WHF</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      overflow-x: hidden;
-    }
-    header {
-      background-color: #004aad;
-      color: white;
-      padding: 40px 20px;
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
       text-align: center;
-      animation: fadeInDown 1s ease-in-out;
+      padding-top: 100px;
     }
-    nav {
-      background: #003080;
-      padding: 10px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+    h1 {
+      color: #2e8b57;
     }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
+    p {
+      font-size: 18px;
     }
-    nav a:hover {
-      color: #ffcc00;
-    }
-    .hero {
-      background: url('https://source.unsplash.com/1600x600/?volunteer,help') no-repeat center center/cover;
-      height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 2.5rem;
-      font-weight: bold;
-      text-shadow: 2px 2px 6px #000;
-      animation: zoomIn 2s ease-in-out;
-    }
-    .section {
-      padding: 60px 30px;
-      max-width: 1200px;
-      margin: auto;
-      background: white;
-      margin-bottom: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      animation: fadeIn 1.5s ease-in-out;
-    }
-    .section h2 {
-      color: #004aad;
-      margin-bottom: 15px;
-    }
-    ul li {
-      line-height: 1.8;
-    }
-    .btn {
-      background: #004aad;
-      color: white;
-      padding: 12px 25px;
-      text-decoration: none;
-      border-radius: 5px;
+    a.button {
       display: inline-block;
-      margin-top: 20px;
-      transition: background 0.3s;
-    }
-    .btn:hover {
-      background: #002f6c;
-    }
-    .footer {
-      background: #003080;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #2e8b57;
       color: white;
-      text-align: center;
-      padding: 25px;
-      font-size: 0.9rem;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
     }
-    @keyframes fadeInDown {
-      from { transform: translateY(-30px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-    @keyframes zoomIn {
-      from { transform: scale(0.8); opacity: 0; }
-      to { transform: scale(1); opacity: 1; }
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+    a.button:hover {
+      background-color: #246b45;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>World Helping Force (WHF)</h1>
-    <p>Empowering Communities. Spreading Hope. Creating Change.</p>
-  </header>
+  <h1>Thank You for Registering!</h1>
+  <p>We’ve received your submission and will be in touch soon.</p>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#mission">Mission</a>
-    <a href="#programs">Programs</a>
-    <a href="registration.html">Volunteer</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <div class="hero">
-    Join Us in Making a Difference
-  </div>
-
-  <div class="section" id="about">
-    <h2>About WHF</h2>
-    <p>World Helping Force (WHF) is a humanitarian and volunteer-driven organization committed to creating meaningful change in underprivileged communities across the globe. We are powered by passionate volunteers and donors who believe in unity, action, and compassion.</p>
-  </div>
-
-  <div class="section" id="mission">
-    <h2>Our Mission</h2>
-    <p>To uplift lives by offering essential aid, educational opportunities, and support services while inspiring a culture of kindness, equity, and global community service.</p>
-    <h3>Our Vision</h3>
-    <p>A world where everyone has access to basic needs, education, and a chance to grow in a safe, compassionate environment.</p>
-  </div>
-
-  <div class="section" id="programs">
-    <h2>Our Core Programs</h2>
-    <ul>
-      <li>🍽️ <strong>Food & Clothing Distribution</strong> – Helping families in need with survival essentials.</li>
-      <li>📚 <strong>Education & Tutoring</strong> – Offering knowledge, tools, and hope through volunteer-led sessions.</li>
-      <li>💰 <strong>Fundraising & Donations</strong> – Supporting projects through global and local campaigns.</li>
-      <li>📢 <strong>Social Media & Content Creation</strong> – Spreading awareness and motivating action through storytelling.</li>
-      <li>🎉 <strong>Event Planning & Coordination</strong> – Organizing charity events, drives, and community activities.</li>
-      <li>🧾 <strong>Administrative Support</strong> – Behind-the-scenes volunteers who keep WHF running efficiently.</li>
-    </ul>
-  </div>
-
-  <div class="section" id="volunteer">
-    <h2>Volunteer With WHF</h2>
-    <p>WHF thrives on the time, talent, and energy of selfless individuals. If you're someone who believes in taking action and making the world better — you belong with us.</p>
-    <a class="btn" href="registrationform.html">📄 Register to Volunteer</a>
-    <p><em>Every small act counts. Every helping hand builds a better world.</em></p>
-  </div>
-
-  <div class="section" id="contact">
-    <h2>Contact Us</h2>
-    <p><strong>Email:</strong> support@whf.org</p>
-    <p><strong>Phone:</strong> +60 123 456 789</p>
-    <p><strong>Address:</strong> Selayang, Kuala Lumpur, Malaysia</p>
-    <p>Follow us on social media: 
-      <a href="#" style="color:#004aad;"><i class="fab fa-facebook"></i></a> 
-      <a href="#" style="color:#004aad;"><i class="fab fa-instagram"></i></a> 
-      <a href="#" style="color:#004aad;"><i class="fab fa-twitter"></i></a>
-    </p>
-  </div>
-
-  <footer class="footer">
-    <p>&copy; 2025 World Helping Force. All rights reserved. | Designed with ❤️ by the WHF Team <br> Created by Founder Mr.Rayhan and Team Leader Ms.Humairah</p>
-  </footer>
+  <!-- Button to go back to home page -->
+  <a class="button" href="index.html">← Go to Home Page</a>
 </body>
 </html>
